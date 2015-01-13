@@ -19,6 +19,11 @@ class OutputHandler
 
     public function writeNull($string)
     {
-        return 'nothing to see.';
+        return null;
+    }
+
+    public function writeStatic($string)
+    {
+        return 'this is a static value.';
     }
 }
