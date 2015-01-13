@@ -2,8 +2,8 @@ language: php
 before_script:
   - wget http://getcomposer.org/composer.phar
   - php composer.phar install --dev
-after_script:
-  - vendor/bin/test-reporter
 php:
   - 5.4
 script: phpunit
+after_script:
+  - vendor/bin/test-reporter
