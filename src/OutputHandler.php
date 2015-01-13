@@ -16,4 +16,9 @@ class OutputHandler
     {
         return 'your rot13 string is: '.rot13($string);
     }
+
+    public function writeNull($string)
+    {
+        return 'nothing to see.';
+    }
 }
