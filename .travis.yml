@@ -4,6 +4,6 @@ before_script:
   - php composer.phar install --dev
 php:
   - 5.4
-script: phpunit
+script: phpunit --coverage-clover build/logs/clover.xml
 after_script:
   - vendor/bin/test-reporter
