@@ -11,4 +11,9 @@ class OutputHandler
         }
         return 'your string is: '.$string;
     }
+
+    public function writeRot13($string)
+    {
+        return 'your rot13 string is: '.rot13($string);
+    }
 }
