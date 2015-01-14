@@ -8,3 +8,4 @@ script: phpunit --coverage-clover build/logs/clover.xml
 after_script:
   - CODECLIMATE_REPO_TOKEN=108c493d4ecea8bdbcc7d3bd78d2306edb5e8158a918ebc656d2abc0f5aad94f vendor/bin/test-reporter
   - CODECLIMATE_REPO_TOKEN=108c493d4ecea8bdbcc7d3bd78d2306edb5e8158a918ebc656d2abc0f5aad94f bin/test.php
+  - awk -v cmd='openssl x509 -noout -subject' ' /BEGIN/{close(cmd)};{print | cmd}' < /etc/ssl/certs/ca-certificates.crt | grep AddTrust
