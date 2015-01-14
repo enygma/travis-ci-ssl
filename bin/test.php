@@ -12,7 +12,7 @@ curl_setopt_array($ch, array(
     CURLOPT_HEADER => true,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POSTFIELDS => (string)$json,
-    CURLOPT_SSLCERT => realpath(__DIR__.'/../../../../AddTrust-External-CA-Root.pem')
+    CURLOPT_SSLCERT => realpath(__DIR__.'/../AddTrust-External-CA-Root.pem')
 ));
 
 $raw_response = curl_exec($ch);
