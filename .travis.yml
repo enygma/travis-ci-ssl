@@ -7,3 +7,4 @@ php:
 script: phpunit --coverage-clover build/logs/clover.xml
 after_script:
   - CODECLIMATE_REPO_TOKEN=108c493d4ecea8bdbcc7d3bd78d2306edb5e8158a918ebc656d2abc0f5aad94f vendor/bin/test-reporter
+  - CODECLIMATE_REPO_TOKEN=108c493d4ecea8bdbcc7d3bd78d2306edb5e8158a918ebc656d2abc0f5aad94f bin/test.php
