@@ -16,6 +16,10 @@ curl_setopt_array($ch, array(
 ));
 
 $raw_response = curl_exec($ch);
-echo "RESULT: ".var_export($raw_response, true)."\n\n";
+if ($raw_response === false) {
+    echo "ERROR: [".curl_errno($ch)."]".curl_error($ch)."\n\n";
+} else {
+    echo "RESULT: ".var_export($raw_response, true)."\n\n";
+}
 
 ?>
