@@ -26,4 +26,18 @@ class OutputHandler
     {
         return 'this is a static value.';
     }
+
+    public function writeNone()
+    {
+        return 'none. yup.';
+    }
+
+    public function anotherUncoveredOne()
+    {
+        return true;
+    }
+    public function andAnother()
+    {
+        return false;
+    }
 }
