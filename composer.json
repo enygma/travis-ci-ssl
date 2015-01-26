@@ -1,12 +1,12 @@
 {
     "repositories": [
         {
-            "url": "https://github.com/enygma/php-test-reporter.git",
-            "type": "git"
+            "url": "https://github.com/enygma/php-test-reporter",
+            "type": "vcs"
         }
     ],
     "require-dev": {
         "phpunit/phpunit": "4.1.4",
-        "codeclimate/php-test-reporter": "remove-curl"
+        "codeclimate/php-test-reporter": "dev-remove-curl"
     }
 }
