@@ -20,4 +20,40 @@ class InputHandler
     {
         return 'quux';
     }
+    public function test5()
+    {
+        return 'quux';
+    }
+    public function test6()
+    {
+        return 'quux';
+    }
+    public function test7()
+    {
+        return 'quux';
+    }
+    public function test8()
+    {
+        return 'quux';
+    }
+    public function test9()
+    {
+        return 'quux';
+    }
+    public function test10()
+    {
+        return 'quux';
+    }
+    public function test11()
+    {
+        return 'quux';
+    }
+    public function test12()
+    {
+        return 'quux';
+    }
+    public function test13()
+    {
+        return 'quux';
+    }
 }
